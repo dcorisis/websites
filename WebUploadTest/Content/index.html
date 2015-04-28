@@ -1,0 +1,105 @@
+﻿<!doctype html>
+<html class="no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	<title>DJ C Dev</title>
+	<meta name="description" content="testing website to aid in learning web development">
+	<meta name="keywords" content="dj corisis development web testing">
+	<meta name="author" content="DJ Corisis">
+	<meta name="viewport" content="width=device-width">
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<!-- build:css(.) styles/vendor.css -->
+	<!-- bower:css -->
+	<link rel="stylesheet" href="bower_components/nvd3/nv.d3.css" />
+	<link rel="stylesheet" href="bower_components/angular-bootstrap-toggle-switch/style/bootstrap3/angular-toggle-switch-bootstrap-3.css" />
+	<!-- endbower -->
+	<!-- endbuild -->
+	<!-- build:css(.tmp) styles/main.css -->
+	<link rel="stylesheet" href="./css/main.css">
+	<!-- endbuild -->
+</head>
+<body ng-app="clientApp">
+	<!--[if lt IE 9]>
+	  <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+	<![endif]-->
+	<!-- Add your site or application content here-->
+	<div>
+		<div id="navbar" class="navbar navbar-default navbar-fixed-top" ng-controller="HeaderCtrl">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" ng-click="toggleCollapse()">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#/">DJ C Development Testing</a>
+			</div>
+			<div class="navbar-collapse collapse" collapse="navbarCollapsed">
+				<ul class="nav navbar-nav navbar-right">
+					<li ng-class="{active: isActive('/Home')}" ng-click="toggleCollapse()"><a href="#/Home">Home</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="main" class="container-fluid" ng-view=""></div>
+
+	</div>
+
+
+	<!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+	<script>
+		(function (i, s, o, g, r, a, m) {
+			i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+				(i[r].q = i[r].q || []).push(arguments)
+			}, i[r].l = 1 * new Date(); a = s.createElement(o),
+			m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+		})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+		ga('create', 'UA-59391709-1');
+		ga('send', 'pageview');
+	</script>
+
+	<!-- build:js(.) scripts/vendor.js -->
+	<!-- bower:js -->
+	<script src="bower_components/jquery/dist/jquery.js"></script>
+	<script src="bower_components/angular/angular.js"></script>
+	<script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+	<script src="bower_components/angular-cookies/angular-cookies.js"></script>
+	<script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+	<script src="bower_components/angular-animate/angular-animate.js"></script>
+	<script src="bower_components/angular-touch/angular-touch.js"></script>
+	<script src="bower_components/angular-route/angular-route.js"></script>
+	<script src="bower_components/lodash/dist/lodash.compat.js"></script>
+	<script src="bower_components/restangular/dist/restangular.js"></script>
+	<script src="bower_components/d3/d3.js"></script>
+	<script src="bower_components/nvd3/nv.d3.js"></script>
+	<script src="bower_components/angular-nvd3/dist/angular-nvd3.js"></script>
+	<script src="bower_components/angular-bootstrap-toggle-switch/angular-toggle-switch.js"></script>
+	<script src="bower_components/moment/moment.js"></script>
+	<script src="bower_components/spin.js/spin.js"></script>
+	<script src="bower_components/angular-spinner/angular-spinner.js"></script>
+	<script src="bower_components/jquery-knob/js/jquery.knob.js"></script>
+	<!-- endbower -->
+	<!-- endbuild -->
+	<!-- build:js({.tmp,app}) scripts/scripts.js -->
+	<script src="scripts/app.js"></script>
+	<script src="scripts/controllers/header.js"></script>
+	<script src="scripts/controllers/buildingSelector.js"></script>
+	<script src="scripts/controllers/buildingDisplay.js"></script>
+	<script src="scripts/controllers/compDisplay.js"></script>
+	<script src="scripts/controllers/frontPageSummary.js"></script>
+	<script src="scripts/controllers/competitionGraph.js"></script>
+	<script src="scripts/services/buildingSvc.js"></script>
+	<script src="scripts/services/compEditSvc.js"></script>
+	<script src="scripts/directives/knob.js"></script>
+
+	<!-- endbuild -->
+</body>
+</html>

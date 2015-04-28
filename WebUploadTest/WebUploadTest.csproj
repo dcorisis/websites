@@ -57,6 +57,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\css\main.css" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -66,17 +67,21 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\css\styles.css" />
+    <Content Include="Content\views\Footer.html" />
+    <Content Include="Content\views\View2.html" />
+    <Content Include="Content\index.html" />
     <Content Include="Content\Home.html" />
+    <Content Include="Content\scripts\global_defs.js" />
+    <Content Include="Content\views\Header.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Content\globals\" />
     <Folder Include="Content\images\" />
-    <Folder Include="Content\scripts\" />
     <Folder Include="Content\services\" />
-    <Folder Include="Content\views\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
