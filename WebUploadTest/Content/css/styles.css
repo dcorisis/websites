@@ -4,3 +4,46 @@
     background: -moz-linear-gradient(blue, yellow); /* For Firefox 3.6 to 15 */
     background: linear-gradient(blue, yellow); /* Standard syntax (must be last) */
 }
+
+body {
+  padding-bottom: 20px;
+
+  //background-image: url("../images/gonzaga_backgroundtwo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+
+  //if small screen kill background
+  @media (max-width: $screen-md) {
+    background-color: $gray;
+    background-size: 0;
+  }
+}
+
+#navbar {
+  padding-left: 15px;
+  padding-right: 15px;
+  .navbar-brand {
+    @media (max-width: 400px) {
+      width: 10%;
+      padding-top: 10px;
+    }
+  }
+}
+
+#main{
+  margin-top: 75px; //separate nav from main views
+}
+
+//change graph line thickness
+.nvd3 g.nv-groups path.nv-line {
+  stroke-width: 4px;
+}
+
+//for compatability warning
+.browsehappy {
+  margin-top: 150px;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}

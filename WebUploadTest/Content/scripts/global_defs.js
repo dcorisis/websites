@@ -1,11 +1,13 @@
 ﻿$(document).ready(function () {
-    //loadHeaders();
+    loadHeaders();
+    loadFooters();
 });
 
-function loadHeaders(isHome)
+function loadHeaders()
 {
-    if(isHome)
-        $("#header").load("./views/Header.html");
-    else
-        $("#header").load("./Header.html");
+    $("#header").load("./Header.html");
+}
+
+function loadFooters() {
+    $("#footer").load("./Footer.html");
 }

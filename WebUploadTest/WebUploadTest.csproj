@@ -68,9 +68,9 @@
   <ItemGroup>
     <Content Include="Content\css\styles.css" />
     <Content Include="Content\views\Footer.html" />
-    <Content Include="Content\views\View2.html" />
+    <Content Include="Content\views\Page2.html" />
     <Content Include="Content\index.html" />
-    <Content Include="Content\Home.html" />
+    <Content Include="Content\views\Home.html" />
     <Content Include="Content\scripts\global_defs.js" />
     <Content Include="Content\views\Header.html" />
     <Content Include="Web.config" />

@@ -1,15 +1,32 @@
-﻿<div>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-	<!-- jQuery library -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	<!-- Latest compiled JavaScript -->
-	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+﻿<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="testing website to aid in learning web development">
+<meta name="keywords" content="dj corisis development web testing">
+<meta name="author" content="DJ Corisis">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 
-	<link rel="stylesheet" href="./css/styles.css">
-
-	<h1>This is a header</h1>
+<link rel="stylesheet" href="../css/styles.css">
+<link rel="stylesheet" href="../css/main.css">
+<div>
+	<div id="navbar" class="navbar navbar-default navbar-fixed-top" ng-controller="HeaderCtrl">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" ng-click="toggleCollapse()">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#/">DJ C Development Testing</a>
+		</div>
+		<div class="navbar-collapse collapse" collapse="navbarCollapsed">
+			<ul class="nav navbar-nav navbar-right">
+				<li ng-class="{active: isActive('/Home')}" ng-click="toggleCollapse()"><a href="#/Home">Home</a></li>
+			</ul>
+		</div>
+	</div>
 </div>
