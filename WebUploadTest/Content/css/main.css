@@ -1,77 +1,75 @@
-@import "bootstrap/bootstrap";
-@import "buildingSelector";
-@import "buildingDisplay";
-@import "compDisplay";
-
 //backgrounds set in js depending on time
 .background-morning {
-  background-image: url("../images/morning.jpg");
+    background-image: url("../images/morning.jpg");
 }
+
 .background-afternoon {
-  background-image: url("../images/gonzaga_backgroundone.jpg");
+    background-image: url("../images/gonzaga_backgroundone.jpg");
 }
+
 .background-evening {
-  background-image: url("../images/gonzaga_backgroundtwo.jpg");
+    background-image: url("../images/gonzaga_backgroundtwo.jpg");
 }
 
 //main app body (everything not header)
 body {
-  padding-bottom: 20px;
-
-  //background-image: url("../images/gonzaga_backgroundtwo.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100%;
-
-  //if small screen kill background
-  @media (max-width: $screen-md) {
-    background-color: $gray;
-    background-size: 0;
-  }
+    margin-top: 100px;
+    padding-bottom: 20px;
+    //background-image: url("../images/gonzaga_backgroundtwo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    //if small screen kill background
+    @media (max-width: $screen-md) {
+        background-color: $gray;
+        background-size: 0;
+    }
 }
 
 #navbar {
-  padding-left: 15px;
-  padding-right: 15px;
-  .navbar-brand {
-    @media (max-width: 400px) {
-      width: 10%;
-      padding-top: 10px;
+    height: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    .navbar-brand {
+        @media (max-width: 400px) {
+            width: 10%;
+            padding-top: 10px;
+        }
     }
-  }
 }
 
 #gu-icon {
-  float: left;
-  height: 60px;
+    float: left;
+    height: 60px;
 }
 
-#main{
-  margin-top: 75px; //separate nav from main views
+#main {
+    margin-top: 75px; //separate nav from main views
 }
 
 .clickable {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 .panel-shadow {
-  box-shadow: 0 0 50px #CCCCCC;
+    box-shadow: 0 0 50px #CCCCCC;
 }
 
 //change graph line thickness
 .nvd3 g.nv-groups path.nv-line {
-  stroke-width: 4px;
+    stroke-width: 4px;
 }
 
 //change color of toggle switch
 .switch-left {
-  background: $brand-primary !important;
+    background: $brand-primary !important;
 }
 
 //for compatability warning
 .browsehappy {
-  margin-top: 150px;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0;
+    margin-top: 150px;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
 }

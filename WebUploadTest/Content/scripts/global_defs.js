@@ -1,6 +1,6 @@
 ﻿$(document).ready(function () {
     loadHeaders();
-    loadFooters();
+    loadNavBars();
 });
 
 function loadHeaders()
@@ -8,6 +8,7 @@ function loadHeaders()
     $("#header").load("./Header.html");
 }
 
-function loadFooters() {
-    $("#footer").load("./Footer.html");
+function loadNavBars() {
+    $("#top-navbar-container").load("./TopNavBar.html");
+    $("#bottom-navbar-container").load("./BottomNavBar.html");
 }
