@@ -4,6 +4,7 @@
     document.getElementById('background').style.minHeight = (window.innerHeight - 150) + 'px';
 });
 
+
 function loadHeaders()
 {
     $("#header").load("./Header.html");
