@@ -67,6 +67,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\css\styles.css" />
+    <Content Include="Content\scripts\HomeController.js" />
     <Content Include="Content\views\BottomNavBar.html" />
     <Content Include="Content\views\TopNavBar.html" />
     <Content Include="Content\views\Page2.html" />
